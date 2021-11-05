@@ -77,3 +77,11 @@
 
 // === Default settings
 #define DEFAULT_STEP_PULSE_MICROSECONDS I2S_OUT_USEC_PER_PULSE
+
+//**Storage
+#define ENABLE_SD_CARD
+#define GRBL_SPI_SS     GPIO_NUM_17
+#define GRBL_SPI_MOSI   GPIO_NUM_5
+#define GRBL_SPI_MISO   GPIO_NUM_19
+#define GRBL_SPI_SCK    GPIO_NUM_18
+#define GRBL_SPI_FREQ   4000000
