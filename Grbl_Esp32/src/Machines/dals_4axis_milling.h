@@ -45,33 +45,31 @@
 // Motor Socket #1
 #define X_STEP_PIN              I2SO(0)
 #define X_DIRECTION_PIN         I2SO(1)
-#define X_DISABLE_PIN           I2SO(6)
+#define X_DISABLE_PIN           I2SO(12)
 
 // Motor Socket #2
 #define Y_STEP_PIN              I2SO(2)
 #define Y_DIRECTION_PIN         I2SO(3)
-#define Y_DISABLE_PIN           I2SO(7)
+#define Y_DISABLE_PIN           I2SO(13)
 
 // Motor Socket #3
 #define Z_STEP_PIN              I2SO(4)
 #define Z_DIRECTION_PIN         I2SO(5)
-#define Z_DISABLE_PIN           I2SO(8)
+#define Z_DISABLE_PIN           I2SO(14)
 
 // OK to comment out to use pin for other features
 //#define STEPPERS_DISABLE_PIN    GPIO_NUM_13
 
 #define SPINDLE_TYPE            SpindleType::PWM
 #define SPINDLE_OUTPUT_PIN      GPIO_NUM_2   // labeled SpinPWM
-#define SPINDLE_ENABLE_PIN      GPIO_NUM_23   // labeled SpinEnbl
+#define SPINDLE_ENABLE_PIN      GPIO_NUM_15   // labeled SpinEnbl
+#define SPINDLE_DIR_PIN         GPIO_NUM_4
 
-#define COOLANT_MIST_PIN        I2SO(12)  // labeled Mist
-#define COOLANT_FLOOD_PIN       I2SO(13)  // labeled Flood
+#define X_LIMIT_PIN             GPIO_NUM_34
+#define Y_LIMIT_PIN             GPIO_NUM_35
+#define Z_LIMIT_PIN             GPIO_NUM_32
 
-#define PROBE_PIN               GPIO_NUM_34 // labeled Probe
-
-#define X_LIMIT_PIN             GPIO_NUM_33
-#define Y_LIMIT_PIN             GPIO_NUM_32
-#define Z_LIMIT_PIN             GPIO_NUM_35
+#define PROBE_PIN               GPIO_NUM_33 // labeled Probe
 
 #define I2S_OUT_NUM_BITS    32
 
